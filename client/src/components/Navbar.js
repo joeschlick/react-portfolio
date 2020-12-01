@@ -21,13 +21,25 @@ import {
 
 const Navbar = () => {
   return (
+      <>
+    <Box component="div">
+        <Avatar src={coolpic} alt="pic of me" />
+
+    </Box>
+    
     <Box component="nav">
-      <AppBar>
+      <AppBar position="static" style={{ background: "black" }}>
         <Toolbar>
-          <ArrowBack />
+          <IconButton>
+            <ArrowBack style={{ color: "lightGrey" }} />
+          </IconButton>
+          <Typography variant="h5" style={{ color: "lightGrey" }}>
+            Portfolio
+          </Typography>
         </Toolbar>
       </AppBar>
     </Box>
+    </>
   );
 };
 
