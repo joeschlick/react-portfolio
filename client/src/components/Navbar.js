@@ -18,6 +18,7 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
+import coolpic from "../coolpic.jpg"
 
 const Navbar = () => {
   return (
