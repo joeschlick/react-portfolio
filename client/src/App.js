@@ -4,6 +4,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
 import Home from "./components/"
 import Resume from './components/Resume';
+import Protfolio from './components/Portfolio';
+
 
 function App() {
   return (
