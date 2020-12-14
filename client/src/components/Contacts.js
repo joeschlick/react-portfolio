@@ -79,7 +79,7 @@ const Contacts = () => {
               target="blank"
               variant="outlined"
             >
-              https://www.linkedin.com/in/joe-schlick-664b503a/
+              https://www.linkedin.com/in/joe-schlick-664b503a
             </Button>
             <br />
             <br />
