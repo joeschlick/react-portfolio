@@ -23,6 +23,7 @@ import {
   ContactMail,
 } from "@material-ui/icons";
 import coolpic from "../coolpic.jpg";
+import Footer from "./Footer";
 
 // CSS Styles
 const useStyles = makeStyles((theme) => ({
@@ -55,7 +56,7 @@ const menuItems = [
   },
   {
     listIcon: <Apps />,
-    listText: "Portfolio",
+    listText: "Projects",
     listPath: "/portfolio"
   },
   {
@@ -108,7 +109,7 @@ const Navbar = () => {
               <ArrowBack style={{ color: "lightGrey" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "lightGrey" }}>
-              Portfolio
+              Web Development Portfolio
             </Typography>
             <MobileRightMenuSlider
             anchor="right"
@@ -116,6 +117,7 @@ const Navbar = () => {
             onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobileRightMenuSlider>
           </Toolbar>
         </AppBar>

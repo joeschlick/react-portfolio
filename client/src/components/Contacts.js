@@ -5,11 +5,14 @@ import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
 const useStyles = makeStyles(theme=>({
-    from: {
+    form: {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
         position: "absolute"
+    },
+    button: {
+        marginTop: "1rem"
     }
 }))
 
@@ -30,8 +33,9 @@ const Contacts = () => {
     const classes = useStyles()
   return (
     <Box component="div">
+        <Navbar />
       <Grid container justify="center">
-        <Box component="form">
+        <Box component="form" className={classes.form}>
           <Typography variant="h5">Contact me:</Typography>
           <InputField
             fullWidth={true}
@@ -57,7 +61,7 @@ const Contacts = () => {
             size="medium"
           />
           <br/>
-          <Button variant="outlined" fullWidth={true} endIcon={<SendIcon />} >
+          <Button className={classes.button} variant="outlined" fullWidth={true} endIcon={<SendIcon />} >
               Submit
           </Button>
         </Box>

@@ -6,7 +6,7 @@ import eventRez from "../eventRez.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
+    background: "Grey",
     color: "white",
   },
   
