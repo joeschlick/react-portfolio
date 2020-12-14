@@ -112,10 +112,20 @@ const Porfolio = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://joeschlick.github.io/team-sac-repo/" target="blank">Site</a>
+                  <a
+                    href="https://joeschlick.github.io/team-sac-repo/"
+                    target="blank"
+                  >
+                    Site
+                  </a>
                 </Button>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://github.com/joeschlick/team-sac-repo" target="blank">Repo</a>
+                  <a
+                    href="https://github.com/joeschlick/team-sac-repo"
+                    target="blank"
+                  >
+                    Repo
+                  </a>
                 </Button>
               </CardActions>
             </CardActionArea>
@@ -142,12 +152,17 @@ const Porfolio = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://sheltered-savannah-06669.herokuapp.com/" target="blank">
+                  <a
+                    href="https://sheltered-savannah-06669.herokuapp.com/"
+                    target="blank"
+                  >
                     Site
                   </a>
                 </Button>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://github.com/joeschlick/burger" target="blank">Repo</a>
+                  <a href="https://github.com/joeschlick/burger" target="blank">
+                    Repo
+                  </a>
                 </Button>
               </CardActions>
             </CardActionArea>
@@ -174,10 +189,18 @@ const Porfolio = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://sheltered-inlet-81142.herokuapp.com" target="blank">Site</a>
+                  <a
+                    href="https://sheltered-inlet-81142.herokuapp.com"
+                    target="blank"
+                  >
+                    Site
+                  </a>
                 </Button>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://github.com/joeschlick/workout-tracker" target="blank">
+                  <a
+                    href="https://github.com/joeschlick/workout-tracker"
+                    target="blank"
+                  >
                     Repo
                   </a>
                 </Button>
@@ -205,12 +228,18 @@ const Porfolio = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://joeschlick.github.io/Weather-Dashboard/" target="blank">
+                  <a
+                    href="https://joeschlick.github.io/Weather-Dashboard/"
+                    target="blank"
+                  >
                     Site
                   </a>
                 </Button>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://github.com/joeschlick/Weather-Dashboard" target="blank">
+                  <a
+                    href="https://github.com/joeschlick/Weather-Dashboard"
+                    target="blank"
+                  >
                     Repo
                   </a>
                 </Button>
@@ -240,10 +269,18 @@ const Porfolio = () => {
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://frozen-stream-80617.herokuapp.com/" target="blank">Site</a>
+                  <a
+                    href="https://frozen-stream-80617.herokuapp.com/"
+                    target="blank"
+                  >
+                    Site
+                  </a>
                 </Button>
                 <Button size="small" color="primary" variant="outlined">
-                  <a href="https://github.com/joeschlick/express-note-taker" target="blank">
+                  <a
+                    href="https://github.com/joeschlick/express-note-taker"
+                    target="blank"
+                  >
                     Repo
                   </a>
                 </Button>

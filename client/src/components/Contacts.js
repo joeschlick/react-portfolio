@@ -8,7 +8,7 @@ import {
   Box,
   Button,
 } from "@material-ui/core";
-gimport Navbar from "./Navbar";
+import Navbar from "./Navbar";
 
 const useStyles = makeStyles({
   mainContainer: {

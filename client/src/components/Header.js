@@ -19,13 +19,12 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     marginBottom: "2rem",
   },
-  text:{
+  text: {
     color: "white",
     marginTop: 0,
     maxWidth: "80%",
     margin: "auto",
     marginBottom: "2rem",
-    
   },
   typedContainer: {
     background: "rgba(38,50,56,0.7)",
@@ -48,14 +47,18 @@ const Header = () => {
         <Avatar className={classes.avatar} src={coolpic} alt="pic of me" />
       </Grid>
       <Typography className={classes.title} variant="h2">
-      Joe Schlick
+        Joe Schlick
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h4">
         Full Stack Web Developer
       </Typography>
-      <Typography className={classes.text} variant="h6" >
-      Background in Corporate Event Production and Film Production. Well tested project and team management skills. Fast learner who is highly adaptable, thriving in dynamic environments where deadlines count. Dependable and hard-working, with a good attitude and a great sense of humor.
+      <Typography className={classes.text} variant="h6">
+        Background in Corporate Event Production and Film Production. Well
+        tested project and team management skills. Fast learner who is highly
+        adaptable, thriving in dynamic environments where deadlines count.
+        Dependable and hard-working, with a good attitude and a great sense of
+        humor.
       </Typography>
     </Box>
   );

@@ -1,7 +1,7 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import MobileRightMenuSlider from "@material-ui/core/Drawer"
+import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import {
   AppBar,
   Toolbar,
@@ -47,47 +47,47 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-    listPath: "/"
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
-    listPath: "/resume"
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
     listText: "Projects",
-    listPath: "/portfolio"
+    listPath: "/portfolio",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
-    listPath: "/contacts"
+    listPath: "/contacts",
   },
 ];
 
 const Navbar = () => {
   const [state, setState] = useState({
-    right: false
+    right: false,
   });
 
-  const toggleSlider = ((slider, open) => () => {
-    setState({ ...state, [slider]: open })
-  });
+  const toggleSlider = (slider, open) => () => {
+    setState({ ...state, [slider]: open });
+  };
 
   const classes = useStyles();
 
   const sideList = (slider) => (
-    <Box 
-    className={classes.menuSliderContainer} 
-    component="div"
-    onClick={toggleSlider(slider, false)}
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSlider(slider, false)}
     >
       <Avatar className={classes.avatar} src={coolpic} alt="pic of me" />
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key} component={Link} to={lsItem.listPath} >
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -112,9 +112,9 @@ const Navbar = () => {
               Web Development Portfolio
             </Typography>
             <MobileRightMenuSlider
-            anchor="right"
-            open={state.right}
-            onClose={toggleSlider("right", false)}
+              anchor="right"
+              open={state.right}
+              onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
               <Footer />

@@ -5,23 +5,23 @@ import LinkedIn from "@material-ui/icons/LinkedIn";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-    root: {
-        "& .MuiBottomNavigationAction-root": {
-            minWidth: 0,
-            maxWidth: 150,
-        },
-        "& .MuiSvgIcon-root": {
-            fill: "white",
-            "&:hover": {
-                fill: "grey",
-                fontSize: "1.8rem",
-            },
-        },
+  root: {
+    "& .MuiBottomNavigationAction-root": {
+      minWidth: 0,
+      maxWidth: 150,
     },
+    "& .MuiSvgIcon-root": {
+      fill: "white",
+      "&:hover": {
+        fill: "grey",
+        fontSize: "1.8rem",
+      },
+    },
+  },
 });
 
 const Footer = () => {
-    const classes = useStyles()
+  const classes = useStyles();
   return (
     <BottomNavigation width="auto" style={{ background: "#222" }}>
       <BottomNavigationAction
