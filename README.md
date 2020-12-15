@@ -1,5 +1,5 @@
 # react-portfolio
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/joeschlick/React-Employee-Directory)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/joeschlick/react-portfolio)
 
 ## Description:
 
@@ -50,13 +50,13 @@ If you have any questions about the repo, open an issue or contact [joeschlick](
 
 ## Links:
 
-Repository link: https://github.com/joeschlick/React-Employee-Directory
+Repository link: https://github.com/joeschlick/react-portfolio
 
-Deployed application link: https://joeschlick.github.io/React-Employee-Directory/
+Deployed application link: https://joeschlick.github.io/react-portfolio
 
 ## Media:
 
-![Screen Shot 2020-11-30 at 12 06 56 AM](https://user-images.githubusercontent.com/66143571/100583821-17c6e900-32a0-11eb-820a-604ad2603b90.png)
+![Screen Shot 2020-12-14 at 7 49 41 PM](https://user-images.githubusercontent.com/66143571/102168800-c1cc7680-3e45-11eb-8005-3aea3b5933de.png)
 
 Video: None
 
