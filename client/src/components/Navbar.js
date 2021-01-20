@@ -17,6 +17,7 @@ import {
 } from "@material-ui/core";
 import {
   ArrowBack,
+  Menu,
   AssignmentInd,
   Home,
   Apps,
@@ -106,7 +107,7 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "black" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "lightGrey" }} />
+              <Menu style={{ color: "lightGrey" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "lightGrey" }}>
               Web Development Portfolio

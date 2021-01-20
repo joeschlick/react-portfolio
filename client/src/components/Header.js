@@ -54,11 +54,7 @@ const Header = () => {
         Full Stack Web Developer
       </Typography>
       <Typography className={classes.text} variant="h6">
-        Background in Corporate Event Production and Film Production. Well
-        tested project and team management skills. Fast learner who is highly
-        adaptable, thriving in dynamic environments where deadlines count.
-        Dependable and hard-working, with a good attitude and a great sense of
-        humor.
+        Background in Corporate Event Production and Film Production. Highly adaptable, thriving in dynamic environments where deadlines count. Enthusiastic team player with tested management skills. Excellent verbal and written communicator. Fast learner, dependable and hard-working, with a good attitude and a great sense of humor.
       </Typography>
     </Box>
   );
