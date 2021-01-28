@@ -25,24 +25,34 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     color: "white",
     marginBottom: "1rem",
+    paddingTop: "1rem",
   },
   text: {
-    color: "white",
+    color: "#E3E3E3",
     marginTop: 0,
     maxWidth: "80%",
     margin: "auto",
     marginBottom: "2rem",
   },
   typedContainer: {
+    //marginTop: "3rem",
     background: "rgba(38,50,56,0.7)",
     borderRadius: 5,
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate( -50%, -50%)",
+    //top: "50%",
+    //left: "50%",
+    //transform: "translate( -50%, -50%)",
     width: "100vw",
     //textAlign: "center",
     zIndex: 1,
+  },
+  strong: {
+    color: "white",
+    fontSize: "24px",
+    textDecoration: "underline",
+  },
+  stronga: {
+    color: "white",
   },
 }));
 
@@ -52,25 +62,110 @@ const Resume = () => {
     <>
       <Navbar />
 
-      <Box component="div" className={classes.mainContainer}>
-        <Typography variant="h4" align="center">
-          Experience
-        </Typography>
-      </Box>
       <Box className={classes.typedContainer}>
         <Typography className={classes.subtitle} variant="h4" align="center">
           Technical Skills
         </Typography>
         <Typography className={classes.text} variant="h6">
-          <strong>Languages:</strong> React, Mongoose, Mongo DB, Sequelize,
-          MySQL, Express, Node JS, JavaScript, HTML, CSS, Bootstrap, Material UI
-          <br/>
-          <strong>Applications: </strong>
-          Mac OS, VS Code, G Suite, Microsoft Office, Windows 10, Sketchup, Illustrator,
+          <strong className={classes.strong}>Languages:</strong> React,
+          Mongoose, Mongo DB, Sequelize, MySQL, Express, Node JS, JavaScript,
+          HTML, CSS, Bootstrap, Material UI
+          <br />
+          <strong className={classes.strong}>Applications:</strong> Mac OS, VS
+          Code, G Suite, Microsoft Office, Windows 10, Sketchup, Illustrator,
           Photoshop
         </Typography>
+        <Typography className={classes.subtitle} variant="h4" align="center">
+          Work Experience
+        </Typography>
         <Typography className={classes.text} variant="h6">
-          
+          <strong className={classes.strong}>
+            Freelance Event Producer: 2011-2021
+          </strong>
+          <br />
+          <strong className={classes.stronga}>
+            Companies: Jack Morton Worldwide, Freeman, George P. Johnson, The XD
+            Agency
+          </strong>
+          <br />
+          Client facing project manager for corporate events with 10,000+
+          attendees. Inspiring client and creative team to create visual,
+          interactive, and presentation content. Creating and managing budgets.
+          Hiring crew leads and engaging vendors. Managing onsite execution of
+          all planned events and last minute additions.
+          <br />
+          <strong className={classes.stronga}>Key Accomplishments:</strong>
+          <br />
+          ● Building relationships with all departments on an event to achieve a
+          common goal
+          <br />
+          ● Reliably staying on or under budget for projects with constant
+          changes
+          <br />
+          ● Effective and respectful communication with all stakeholders
+          <br />
+          ● Delegating tasks to responsible parties with respect, and total
+          willingness to jump in where needed to get the job done.
+          <br />
+          <strong className={classes.stronga}>
+            Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
+            Square Enix, Capcom
+          </strong>
+        </Typography>
+        <Typography className={classes.text} variant="h6">
+          <strong className={classes.strong}>
+          Freelance Stage Manager: 2015-2021
+          </strong>
+          <br />
+          <strong className={classes.stronga}>
+            Companies: Jack Morton Worldwide, Freeman, Opus Agency, EMN8 Creative
+          </strong>
+          <br />
+          Assisting producer in talent management, cueing, and other related needs for running show and rehearsals. Planning and managing onstage furniture placement and stage moves. Supervising stage hands/carpenters as needed for all stage moves.
+          <br />
+          <strong className={classes.stronga}>Key Accomplishments:</strong>
+          <br />
+          ● Performing flawlessly while staying calm, focused, and respectful in high-pressure, live situations
+          <br />
+          ● Working directly with high profile personalities such as: Michelle Obama, Joe Biden, John Legend, Brene
+Brown, Gwynneth Paltrow, Natalie Portman, and Kanye West
+          <br />
+          <strong className={classes.stronga}>
+            Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
+            Square Enix, Capcom
+          </strong>
+        </Typography>
+        <Typography className={classes.text} variant="h6">
+          <strong className={classes.strong}>
+            Freelance Speaker Coordinator: 2015-2021
+          </strong>
+          <br />
+          <strong className={classes.stronga}>
+            Companies: FNTech, Jack Morton Worldwide
+          </strong>
+          <br />
+          Point of contact for all speakers. Managing speaker information on the
+          show website and in the registration database. Managing speaker slide
+          decks and submitting them for client approval. Scheduling rehearsal
+          times and relaying logistics information to presenters before they
+          arrive onsite. Managing speaker support onsite, ensuring that all
+          speakers have successful sessions.
+          <br />
+          <strong className={classes.stronga}>Key Accomplishments:</strong>
+          <br />
+          ● Successfully managing international events, with hundreds of
+          speakers, from start to finish
+          <br />
+          ● Working diligently to meet speaker needs while staying in scope
+          established by client
+          <br />
+          ● Collaborating with all departments to set up speakers for successful
+          sessions
+          <br />
+          <strong className={classes.stronga}>
+            Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
+            Square Enix, Capcom
+          </strong>
         </Typography>
       </Box>
     </>
