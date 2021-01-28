@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Box, Grid, Paper } from "@material-ui/core";
+import { Typography, Box, Grid, Paper, Button} from "@material-ui/core";
 import Navbar from "./Navbar";
 import eventRez1 from "../eventRez1.jpg";
 import eventRez2 from "../eventRez2.jpg";
@@ -46,6 +46,15 @@ const useStyles = makeStyles((theme) => ({
     //textAlign: "center",
     zIndex: 1,
   },
+  button: {
+    color: "#4A4A4A",
+    fontSize: "24px",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+    borderColor: "white"
+
+
+  },
   strong: {
     color: "white",
     fontSize: "24px",
@@ -63,6 +72,12 @@ const Resume = () => {
       <Navbar />
 
       <Box className={classes.typedContainer}>
+        <Typography align="center"> 
+        <Button className={classes.button} href="https://www.dropbox.com/s/07berl05qv02uq2/Joe-Schlick-Developer-Resume-1.6.2021%20-%20Google%20Docs.pdf?dl=0" variant="contained" size="large" >
+              Download Full Resume
+            </Button>
+        </Typography>
+      
         <Typography className={classes.subtitle} variant="h4" align="center">
           Technical Skills
         </Typography>
@@ -163,9 +178,19 @@ Brown, Gwynneth Paltrow, Natalie Portman, and Kanye West
           sessions
           <br />
           <strong className={classes.stronga}>
-            Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
-            Square Enix, Capcom
+            Clients Include: Facebook, OpenStack, Oculus, Open Compute Project
           </strong>
+        </Typography>
+        <Typography className={classes.subtitle} variant="h4" align="center">
+          Education
+        </Typography>
+        <Typography className={classes.text} variant="h6">
+          ● UC Davis Continuing and Professional Education Bootcamp - Full Stack Web Development
+
+          <br />
+          ● Santa Fe University of Art and Design (formerly College of Santa Fe) - B.A., Moving Image Arts
+          <br />
+          ● Lewis & Clark College - Art Major
         </Typography>
       </Box>
     </>
