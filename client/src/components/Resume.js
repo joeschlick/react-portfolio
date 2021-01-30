@@ -1,9 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Box, Grid, Paper, Button} from "@material-ui/core";
+import { Typography, Box, Button} from "@material-ui/core";
 import Navbar from "./Navbar";
-import eventRez1 from "../eventRez1.jpg";
-import eventRez2 from "../eventRez2.jpg";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,8 +51,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "1rem",
     marginBottom: "1rem",
     borderColor: "white"
-
-
   },
   strong: {
     color: "white",
