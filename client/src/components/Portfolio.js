@@ -18,6 +18,7 @@ import project3 from "../images/burger.png";
 import project4 from "../images/fitness.png";
 import project5 from "../images/weather.png";
 import project6 from "../images/note-taker.png";
+import project7 from "../images/coders-corner.png";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -50,6 +51,43 @@ const Porfolio = () => {
         </Typography>
       </Box>
       <Grid container justify="center">
+        {/*Project 7 */}
+      <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt=""
+                height="100%"
+                image={project7}
+              />
+              <CardContent className={classes.cardContent}>
+                <Typography gutterBottom variant="h5">
+                  Coder's Corner
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                A social network for coding enthusiasts! Coder's Corner is a platform for developers to share resources, network, chat, post their thoughts, and write their own code.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small" variant="outlined">
+                  <a href="https://the-coders-corner.herokuapp.com/" target="blank">
+                    Site
+                  </a>
+                </Button>
+                <Button size="small" variant="outlined">
+                  <a
+                    href="https://github.com/joeschlick/the-coders-corner"
+                    variant="outlined"
+                    target="blank"
+                  >
+                    Repo
+                  </a>
+                </Button>
+              </CardActions>
+            </CardActionArea>
+          </Card>
+        </Grid>
         {/*Project 1 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
