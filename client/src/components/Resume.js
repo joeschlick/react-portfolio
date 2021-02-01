@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box, Button, Grid } from "@material-ui/core";
+import Accordion from "./Accordion"
 import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
@@ -96,12 +97,14 @@ const Resume = () => {
           <Typography className={classes.subtitle} variant="h4" align="center">
             Work Experience
           </Typography>
-          <Typography className={classes.text} variant="h6">
-            <strong className={classes.strong}>
+          <Accordion 
+            title="Freelance Event Producer: 2011-2021"
+              content="
+            <strong>
               Freelance Event Producer: 2011-2021
             </strong>
             <br />
-            <strong className={classes.stronga}>
+            <strong >
               Companies: Jack Morton Worldwide, Freeman, George P. Johnson, The
               XD Agency
             </strong>
@@ -129,7 +132,10 @@ const Resume = () => {
               Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
               Square Enix, Capcom
             </strong>
-          </Typography>
+              "
+              />
+          
+          
           <Typography className={classes.text} variant="h6">
             <strong className={classes.strong}>
               Freelance Stage Manager: 2015-2021
