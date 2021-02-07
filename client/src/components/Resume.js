@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box, Button, Grid } from "@material-ui/core";
+import Accordion from "./Accordion";
 import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "1rem",
   },
   text: {
-    color: "#E3E3E3",
+    color: "white",
     marginTop: 0,
     maxWidth: "80%",
     margin: "auto",
@@ -96,15 +97,14 @@ const Resume = () => {
           <Typography className={classes.subtitle} variant="h4" align="center">
             Work Experience
           </Typography>
-          <Typography className={classes.text} variant="h6">
-            <strong className={classes.strong}>
-              Freelance Event Producer: 2011-2021
-            </strong>
-            <br />
-            <strong className={classes.stronga}>
+          <Accordion
+            title="Freelance Event Producer: 2011–2021"
+            content="
+            <strong >
               Companies: Jack Morton Worldwide, Freeman, George P. Johnson, The
               XD Agency
             </strong>
+            <br />
             <br />
             Client facing project manager for corporate events with 10,000+
             attendees. Inspiring client and creative team to create visual,
@@ -112,7 +112,8 @@ const Resume = () => {
             budgets. Hiring crew leads and engaging vendors. Managing onsite
             execution of all planned events and last minute additions.
             <br />
-            <strong className={classes.stronga}>Key Accomplishments:</strong>
+            <br />
+            <strong >Key Accomplishments:</strong>
             <br />
             ● Building relationships with all departments on an event to achieve
             a common goal
@@ -125,71 +126,79 @@ const Resume = () => {
             ● Delegating tasks to responsible parties with respect, and total
             willingness to jump in where needed to get the job done.
             <br />
-            <strong className={classes.stronga}>
+            <br />
+            <strong >
               Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
               Square Enix, Capcom
             </strong>
-          </Typography>
-          <Typography className={classes.text} variant="h6">
-            <strong className={classes.strong}>
-              Freelance Stage Manager: 2015-2021
-            </strong>
-            <br />
-            <strong className={classes.stronga}>
-              Companies: Jack Morton Worldwide, Freeman, Opus Agency, EMN8
-              Creative
-            </strong>
-            <br />
-            Assisting producer in talent management, cueing, and other related
-            needs for running show and rehearsals. Planning and managing onstage
-            furniture placement and stage moves. Supervising stage
-            hands/carpenters as needed for all stage moves.
-            <br />
-            <strong className={classes.stronga}>Key Accomplishments:</strong>
-            <br />
-            ● Performing flawlessly while staying calm, focused, and respectful
-            in high-pressure, live situations
-            <br />
-            ● Working directly with high profile personalities such as: Michelle
-            Obama, Joe Biden, John Legend, Brene Brown, Gwynneth Paltrow,
-            Natalie Portman, and Kanye West
-            <br />
-            <strong className={classes.stronga}>
-              Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
-              Square Enix, Capcom
-            </strong>
-          </Typography>
-          <Typography className={classes.text} variant="h6">
-            <strong className={classes.strong}>
-              Freelance Speaker Coordinator: 2015-2021
-            </strong>
-            <br />
-            <strong className={classes.stronga}>
-              Companies: FNTech, Jack Morton Worldwide
-            </strong>
-            <br />
-            Point of contact for all speakers. Managing speaker information on
-            the show website and in the registration database. Managing speaker
-            slide decks and submitting them for client approval. Scheduling
-            rehearsal times and relaying logistics information to presenters
-            before they arrive onsite. Managing speaker support onsite, ensuring
-            that all speakers have successful sessions.
-            <br />
-            <strong className={classes.stronga}>Key Accomplishments:</strong>
-            <br />
-            ● Successfully managing international events, with hundreds of
-            speakers, from start to finish
-            <br />
-            ● Working diligently to meet speaker needs while staying in scope
-            established by client
-            <br />
-            ● Collaborating with all departments to set up speakers for
-            successful sessions
-            <br />
-            <strong className={classes.stronga}>
-              Clients Include: Facebook, OpenStack, Oculus, Open Compute Project
-            </strong>
-          </Typography>
+              "
+          />
+
+          <Accordion
+            title="Freelance Stage Manager: 2015–2021"
+            content="
+          <strong >
+          Companies: Jack Morton Worldwide, Freeman, Opus Agency, EMN8
+          Creative
+        </strong>
+        <br />
+        <br />
+        Assisting producer in talent management, cueing, and other related
+        needs for running show and rehearsals. Planning and managing onstage
+        furniture placement and stage moves. Supervising stage
+        hands/carpenters as needed for all stage moves.
+        <br />
+        <br />
+        <strong >Key Accomplishments:</strong>
+        <br />
+        ● Performing flawlessly while staying calm, focused, and respectful
+        in high-pressure, live situations
+        <br />
+        ● Working directly with high profile personalities such as: Michelle
+        Obama, Joe Biden, John Legend, Brene Brown, Gwynneth Paltrow,
+        Natalie Portman, and Kanye West
+        <br />
+        <br />
+        <strong >
+          Clients Include: Google, VMware, T-Mobile, Cisco, HP, Kia, IBM,
+          Square Enix, Capcom
+        </strong>"
+          />
+
+          <Accordion
+            title="Freelance Speaker Coordinator: 2015–2021"
+            content="
+        <strong >
+        Companies: FNTech, Jack Morton Worldwide
+      </strong>
+      <br />
+      <br />
+      Point of contact for all speakers. Managing speaker information on
+      the show website and in the registration database. Managing speaker
+      slide decks and submitting them for client approval. Scheduling
+      rehearsal times and relaying logistics information to presenters
+      before they arrive onsite. Managing speaker support onsite, ensuring
+      that all speakers have successful sessions.
+      <br />
+      <br />
+      <strong >Key Accomplishments:</strong>
+      <br />
+      ● Successfully managing international events, with hundreds of
+      speakers, from start to finish
+      <br />
+      ● Working diligently to meet speaker needs while staying in scope
+      established by client
+      <br />
+      ● Collaborating with all departments to set up speakers for
+      successful sessions
+      <br />
+      <br />
+      <strong >
+        Clients Include: Facebook, OpenStack, Oculus, Open Compute Project
+      </strong>
+        "
+          />
+
           <Typography className={classes.subtitle} variant="h4" align="center">
             Education
           </Typography>

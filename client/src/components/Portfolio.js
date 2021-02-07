@@ -12,7 +12,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import project1 from "../images/qtrends.png";
+import project1 from "../images/Qtrends.png";
 import project2 from "../images/travel.png";
 import project3 from "../images/burger.png";
 import project4 from "../images/fitness.png";
