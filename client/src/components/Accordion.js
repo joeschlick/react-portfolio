@@ -28,7 +28,7 @@ function Accordion(props) {
      <button variant="outlined" className="accordion">
        <p  className="accordion__title">{props.title}
          </p>
-       <ChevronLeftIcon />
+       <ChevronLeftIcon fontSize="large" className="accordion__icon"/>
      </button>
      <div className="accordion__content">
        <div
